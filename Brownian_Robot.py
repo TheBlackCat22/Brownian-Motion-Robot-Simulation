@@ -70,6 +70,7 @@ class Simulation():
             self.clock.tick(self.fps)
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
+                    print("\n\nQuitting!!!!")
                     run = False
 
             if self.robot.rotation_frames == 0:
